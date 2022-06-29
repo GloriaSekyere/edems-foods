@@ -16,7 +16,6 @@ body {
 
 .home {
   min-height: 100vh;
-  padding: 25px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,7 +51,7 @@ body {
 }
 
 .home-content {
-  width: 100%;
+  width: 85%;
 }
 
 .home-content-card {
@@ -82,5 +81,66 @@ body {
 .home-shop a {
   text-decoration: none;
   color: #FFF;
+}
+
+.home .modal-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home .modal-bg .modal {
+  width: 90%;
+  background-color: #FFF;
+  height: 75%;
+  padding: 50px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .modal-bg .modal-title {
+  color: #5A6F1D;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.home .modal-bg .modal-content p {
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+
+.home .modal-bg .modal-close {
+  width: 125px;
+  height: 40px;
+  margin: 75px auto 0;
+  color: #FFF;
+  background-color: #E7523F;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  -webkit-box-shadow: 0 0 7.5px silver;
+          box-shadow: 0 0 7.5px silver;
 }
 /*# sourceMappingURL=App.css.map */
