@@ -1,0 +1,57 @@
+.home {
+  min-height: 100vh;
+  padding: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-logo {
+    position: absolute;
+    top: 75px;
+    text-align: center;
+    h1 {
+      color: $green;
+      font-weight: 500;
+      font-size: 25px;
+      span {
+        color: $red;
+        font-size: 18px;
+        display: inline-block;
+      }
+    }
+  }
+
+  &-content {
+    width: 100%;
+
+    &-card {
+      color: $green;
+      border-radius: 5px;
+      background-color: $gray;
+      padding: 15px;
+      margin: 20px 0;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  &-shop {
+    background-color: $red;
+    width: 125px;
+    height: 40px;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+    position: absolute;
+    bottom: 100px;
+    box-shadow: $box-shadow;
+    
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+
+

@@ -9,4 +9,78 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.app {
+  min-height: 100vh;
+}
+
+.home {
+  min-height: 100vh;
+  padding: 25px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-logo {
+  position: absolute;
+  top: 75px;
+  text-align: center;
+}
+
+.home-logo h1 {
+  color: #5A6F1D;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.home-logo h1 span {
+  color: #E7523F;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.home-content {
+  width: 100%;
+}
+
+.home-content-card {
+  color: #5A6F1D;
+  border-radius: 5px;
+  background-color: #FBFBFB;
+  padding: 15px;
+  margin: 20px 0;
+  -webkit-box-shadow: 0 0 7.5px silver;
+          box-shadow: 0 0 7.5px silver;
+}
+
+.home-shop {
+  background-color: #E7523F;
+  width: 125px;
+  height: 40px;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  bottom: 100px;
+  -webkit-box-shadow: 0 0 7.5px silver;
+          box-shadow: 0 0 7.5px silver;
+}
+
+.home-shop a {
+  text-decoration: none;
+  color: #FFF;
+}
 /*# sourceMappingURL=App.css.map */
