@@ -73,7 +73,18 @@ body {
   color: #FFF;
 }
 
-.home .modal-bg {
+.home-content-card {
+  color: #5A6F1D;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #FBFBFB;
+  padding: 15px;
+  margin: 25px 0;
+  -webkit-box-shadow: 0 0 7.5px silver;
+          box-shadow: 0 0 7.5px silver;
+}
+
+.modal-bg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +103,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.home .modal-bg .modal {
+.modal-bg .modal {
   width: 90%;
   background-color: #FFF;
   height: 75%;
@@ -109,7 +120,7 @@ body {
           align-items: center;
 }
 
-.home .modal-bg .modal-title {
+.modal-bg .modal-title {
   color: #5A6F1D;
   text-transform: uppercase;
   font-size: 20px;
@@ -117,12 +128,12 @@ body {
   margin-bottom: 50px;
 }
 
-.home .modal-bg .modal-content p {
+.modal-bg .modal-content p {
   line-height: 23px;
   margin-bottom: 15px;
 }
 
-.home .modal-bg .modal-close {
+.modal-bg .modal-close {
   width: 125px;
   height: 40px;
   margin: 75px auto 0;
@@ -131,17 +142,6 @@ body {
   border: none;
   border-radius: 5px;
   display: block;
-  -webkit-box-shadow: 0 0 7.5px silver;
-          box-shadow: 0 0 7.5px silver;
-}
-
-.home-content-card {
-  color: #5A6F1D;
-  text-transform: uppercase;
-  border-radius: 5px;
-  background-color: #FBFBFB;
-  padding: 15px;
-  margin: 25px 0;
   -webkit-box-shadow: 0 0 7.5px silver;
           box-shadow: 0 0 7.5px silver;
 }
