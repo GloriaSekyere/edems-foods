@@ -54,16 +54,6 @@ body {
   width: 85%;
 }
 
-.home-content-card {
-  color: #5A6F1D;
-  border-radius: 5px;
-  background-color: #FBFBFB;
-  padding: 15px;
-  margin: 20px 0;
-  -webkit-box-shadow: 0 0 7.5px silver;
-          box-shadow: 0 0 7.5px silver;
-}
-
 .home-shop {
   background-color: #E7523F;
   width: 125px;
@@ -121,6 +111,7 @@ body {
 
 .home .modal-bg .modal-title {
   color: #5A6F1D;
+  text-transform: uppercase;
   font-size: 20px;
   text-align: center;
   margin-bottom: 50px;
@@ -140,6 +131,17 @@ body {
   border: none;
   border-radius: 5px;
   display: block;
+  -webkit-box-shadow: 0 0 7.5px silver;
+          box-shadow: 0 0 7.5px silver;
+}
+
+.home-content-card {
+  color: #5A6F1D;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #FBFBFB;
+  padding: 15px;
+  margin: 25px 0;
   -webkit-box-shadow: 0 0 7.5px silver;
           box-shadow: 0 0 7.5px silver;
 }
