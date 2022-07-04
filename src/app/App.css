@@ -67,7 +67,7 @@ body {
   margin: auto;
 }
 
-.products-content {
+.products-item {
   width: 100%;
   padding: 0 25px;
   display: -webkit-box;
@@ -83,18 +83,19 @@ body {
   background-color: #FBFBFB;
   -webkit-box-shadow: 0 0 7.5px silver;
           box-shadow: 0 0 7.5px silver;
+  margin-bottom: 20px;
 }
 
-.products-content-image {
+.products-item-image {
   width: 100px;
 }
 
-.products-content-image img {
+.products-item-image img {
   max-width: 100%;
   height: auto;
 }
 
-.products-content-details {
+.products-item-details {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
   display: -webkit-box;
@@ -109,7 +110,7 @@ body {
           align-items: flex-end;
 }
 
-.products-content-details-description {
+.products-item-details-description {
   margin-bottom: 20px;
   color: #5A6F1D;
   font-size: 18px;
@@ -117,18 +118,18 @@ body {
   font-weight: 500;
 }
 
-.products-content-details-description span {
+.products-item-details-description span {
   font-size: 16px;
   font-weight: 400;
 }
 
-.products-content-details-quantity {
+.products-item-details-quantity {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.products-content-details-quantity button {
+.products-item-details-quantity button {
   border: none;
   border-radius: 5px;
   background-color: #5A6F1D;
@@ -139,13 +140,57 @@ body {
   font-size: 20px;
 }
 
-.products-content-details-quantity input {
+.products-item-details-quantity input {
   border: 1px solid #5A6F1D;
   border-radius: 5px;
   width: 65px;
   height: 30px;
   display: inline-block;
   margin: 0 2px;
+  text-align: right;
+  color: #5A6F1D;
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+.products-order {
+  background-color: #E7523F;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-order a {
+  color: #FFF;
+  width: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-order-total span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .home-content-card {
