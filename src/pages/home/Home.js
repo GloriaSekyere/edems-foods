@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 //components
 import HomeContentCard from '../../components/HomeContentCard'
@@ -23,7 +24,7 @@ const Home = () => {
       </div>
 
       <div className='home-shop'>
-        <a href="#">SHOP</a>
+        <Link to="/products">SHOP</Link>
       </div>
     </div>
   )
