@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
 }
 
-.home {
+.page {
   min-height: 100vh;
   position: relative;
   display: -webkit-box;
@@ -60,6 +60,92 @@ body {
 .home-shop a {
   text-decoration: none;
   color: #FFF;
+}
+
+.products {
+  width: 85%;
+  margin: auto;
+}
+
+.products-content {
+  width: 100%;
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background-color: #FBFBFB;
+  -webkit-box-shadow: 0 0 7.5px silver;
+          box-shadow: 0 0 7.5px silver;
+}
+
+.products-content-image {
+  width: 100px;
+}
+
+.products-content-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.products-content-details {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.products-content-details-description {
+  margin-bottom: 20px;
+  color: #5A6F1D;
+  font-size: 18px;
+  text-align: right;
+  font-weight: 500;
+}
+
+.products-content-details-description span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.products-content-details-quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-content-details-quantity button {
+  border: none;
+  border-radius: 5px;
+  background-color: #5A6F1D;
+  color: #FFF;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.products-content-details-quantity input {
+  border: 1px solid #5A6F1D;
+  border-radius: 5px;
+  width: 65px;
+  height: 30px;
+  display: inline-block;
+  margin: 0 2px;
 }
 
 .home-content-card {
@@ -137,5 +223,41 @@ body {
   display: block;
   -webkit-box-shadow: 0 0 7.5px silver;
           box-shadow: 0 0 7.5px silver;
+}
+
+.page-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative;
+  height: 50px;
+  margin: 25px 0;
+}
+
+.page-title .back-arrow-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.page-title .back-arrow-div svg {
+  fill: #5A6F1D;
+  max-width: 100%;
+  height: auto;
+}
+
+.page-title h2 {
+  color: #5A6F1D;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 /*# sourceMappingURL=App.css.map */

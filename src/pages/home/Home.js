@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 //components
@@ -7,7 +6,7 @@ import HomeContentCard from '../../components/HomeContentCard'
 const Home = () => {
   
   return (
-    <div className='home'>
+    <div className='page home'>
       <div className='home-logo'>
         <p>LOGO</p>
         <h1>EDEM'S FOODS</h1>

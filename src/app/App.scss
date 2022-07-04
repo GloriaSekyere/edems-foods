@@ -15,6 +15,14 @@ body {
   min-height: 100vh;
 }
 
+.page {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 //pages
 @import "../pages/home/Home";
 @import "../pages/products/Products";
@@ -23,4 +31,5 @@ body {
 //components
 @import "../styles/HomeContentCard";
 @import "../styles/Modal";
+@import "../styles/PageTitle";
 
