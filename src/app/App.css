@@ -24,17 +24,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .home-logo {
-  position: absolute;
-  top: 75px;
+  margin: 50px 0;
   text-align: center;
 }
 
@@ -42,12 +38,6 @@ body {
   color: #5A6F1D;
   font-weight: 500;
   font-size: 25px;
-}
-
-.home-logo h1 span {
-  color: #E7523F;
-  font-size: 18px;
-  display: inline-block;
 }
 
 .home-content {
@@ -62,10 +52,9 @@ body {
   display: -ms-grid;
   display: grid;
   place-content: center;
-  position: absolute;
-  bottom: 100px;
   -webkit-box-shadow: 0 0 7.5px silver;
           box-shadow: 0 0 7.5px silver;
+  margin-top: 50px;
 }
 
 .home-shop a {
@@ -79,9 +68,13 @@ body {
   border-radius: 5px;
   background-color: #FBFBFB;
   padding: 15px;
-  margin: 25px 0;
+  margin-bottom: 25px;
   -webkit-box-shadow: 0 0 7.5px silver;
           box-shadow: 0 0 7.5px silver;
+}
+
+.home-content-card:last-child {
+  margin-bottom: 0;
 }
 
 .modal-bg {

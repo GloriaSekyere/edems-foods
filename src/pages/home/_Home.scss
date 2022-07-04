@@ -3,22 +3,17 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  //justify-content: center;
   align-items: center;
 
   &-logo {
-    position: absolute;
-    top: 75px;
+    margin: 50px 0;
     text-align: center;
+
     h1 {
       color: $green;
       font-weight: 500;
       font-size: 25px;
-      span {
-        color: $red;
-        font-size: 18px;
-        display: inline-block;
-      }
     }
   }
   
@@ -33,9 +28,8 @@
     border-radius: 5px;
     display: grid;
     place-content: center;
-    position: absolute;
-    bottom: 100px;
     box-shadow: $box-shadow;
+    margin-top: 50px;
     
     a {
       text-decoration: none;

@@ -8,9 +8,8 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='home-logo'>
-        <img src="" alt="" />
         <p>LOGO</p>
-        <h1>EDEM'S FOODS <span>Freshness overload all year round</span></h1>
+        <h1>EDEM'S FOODS</h1>
       </div>
 
       <div className='home-content'>
