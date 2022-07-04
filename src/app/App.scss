@@ -17,5 +17,10 @@ body {
 
 //pages
 @import "../pages/home/Home";
+@import "../pages/products/Products";
+@import "../pages/order_summary/OrderSummary";
+
+//components
 @import "../styles/HomeContentCard";
 @import "../styles/Modal";
+
