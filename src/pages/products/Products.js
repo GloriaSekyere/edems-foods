@@ -1,5 +1,7 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
+
+//hooks
+import { useTotal } from '../../hooks/useTotal'
 
 //components
 import LargeJar from '../../components/LargeJar'
@@ -9,7 +11,7 @@ import SmallJar from '../../components/SmallJar'
 
 
 const Products = () => {
-  const [total, setTotal] = useState(0)
+  const { total } = useTotal()
   
   return (
     <div className='page products'>
@@ -26,7 +28,6 @@ const Products = () => {
           <p>place order</p>
         </Link>
       </div>
-      
       
     </div>
   )

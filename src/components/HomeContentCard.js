@@ -14,7 +14,7 @@ const HomeContentCard = ({ title }) => {
     <>
     {isOpen && <Modal title={title} handleClose={handleClose} />}
     <div className='home-content-card' onClick={() => setIsOpen(true)}>
-      <p>&gt; {title}</p>
+      <p>{title}</p>
     </div>
     </>
     
