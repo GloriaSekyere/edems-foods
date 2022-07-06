@@ -1,28 +1,29 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useTotal } from '../hooks/useTotal'
 
 //assets
 import Bucket from '../assets/bucket.png'
 
-const SmallJar = ({ handleTotal }) => {
+const SmallJar = () => {
+  const smallPrice = 20.00
   const [smallQuantity, setSmallQuantity] = useState(0)
   const { setTotal } = useTotal()
 
-  useEffect(() => {
-    setTotal(prevTotal => prevTotal + (smallQuantity * 20))
-  }, [smallQuantity])
-
 
   const handleSmallQuantityChange = (e) => {
-    setSmallQuantity(Number(e.target.value))
+    let quantity = Number(e.target.value)
+    setSmallQuantity(quantity)
+    setTotal(prevTotal => prevTotal + (smallPrice * quantity))
   }
 
   const handleSmallQuantityDecrease = () => {
-    setSmallQuantity(prevQuantity => prevQuantity - 1)
+    setSmallQuantity(prevQuantity => --prevQuantity)
+    setTotal(prevTotal => prevTotal - smallPrice)
   }
 
   const handleSmallQuantityIncrease = () => {
-    setSmallQuantity(prevQuantity => prevQuantity + 1)
+    setSmallQuantity(prevQuantity => ++prevQuantity)
+    setTotal(prevTotal => prevTotal + smallPrice)
   }
 
   return (
