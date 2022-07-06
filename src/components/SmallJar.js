@@ -7,13 +7,15 @@ import Bucket from '../assets/bucket.png'
 const SmallJar = () => {
   const smallPrice = 20.00
   const [smallQuantity, setSmallQuantity] = useState(0)
+  const [prevSmallQuantity, setPrevSmallQuantity] = useState(0)
   const { setTotal } = useTotal()
 
 
   const handleSmallQuantityChange = (e) => {
-    let quantity = Number(e.target.value)
-    setSmallQuantity(quantity)
-    setTotal(prevTotal => prevTotal + (smallPrice * quantity))
+    setSmallQuantity(e.target.value)
+    if (e.target.value == 0) {
+      setTotal(0)
+    }
   }
 
   const handleSmallQuantityDecrease = () => {
@@ -24,6 +26,16 @@ const SmallJar = () => {
   const handleSmallQuantityIncrease = () => {
     setSmallQuantity(prevQuantity => ++prevQuantity)
     setTotal(prevTotal => prevTotal + smallPrice)
+  }
+
+  const handleBlur = (e) => {
+
+    if (prevSmallQuantity != smallQuantity) {
+      setTotal(0)
+      setTotal(prevTotal => prevTotal + (smallPrice * e.target.value))
+      setPrevSmallQuantity(smallQuantity)
+    }
+    
   }
 
   return (
@@ -45,6 +57,7 @@ const SmallJar = () => {
           </button>
           <input 
             onChange={e => handleSmallQuantityChange(e)} 
+            onBlur={e => handleBlur(e)}
             value={smallQuantity} 
           />
           <button 
