@@ -23,7 +23,6 @@ function App() {
           <Route path='/pickup' element={<Pickup />} />
         </Routes>
       </BrowserRouter>
-      
     </div>
   );
 }

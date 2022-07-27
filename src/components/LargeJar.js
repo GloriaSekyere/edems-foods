@@ -1,51 +1,28 @@
+//hooks
 import { useState } from 'react'
+import { useQuantity } from '../hooks/useQuantity'
 
 //assets
 import Bucket from '../assets/bucket.png'
 
+//components
+import Jar from './Jar'
+
 const LargeJar = () => {
-  const [largeQuantity, setLargeQuantity] = useState(0)
-
-  const handleLargeQuantityChange = (e) => {
-    setLargeQuantity(Number(e.target.value))
-  }
-
-  const handleLargeQuantityDecrease = () => {
-    setLargeQuantity(prevQuantity => prevQuantity - 1)
-  }
-
-  const handleLargeQuantityIncrease = () => {
-    setLargeQuantity(prevQuantity => prevQuantity + 1)
-  }
+  const { largeQuantity, setLargeQuantity } = useQuantity()
+  const [prevLargeQuantity, setPrevLargeQuantity] = useState(0)
 
   return (
-    <div className='products-item'>
-      <div className='products-item-image'>
-        <img src={Bucket} alt="Large-jar" />
-      </div>
-
-      <div className='products-item-details'>
-        <div className='products-item-details-description'>
-          <p>Large <span>(1kg)</span></p>
-          <p><span>GHC</span> 40.00</p>
-        </div>
-
-        <div className='products-item-details-quantity'>
-          <button 
-            onClick={handleLargeQuantityDecrease}>
-            -
-          </button>
-          <input 
-            onChange={e => handleLargeQuantityChange(e)} 
-            value={largeQuantity} 
-          />
-          <button 
-            onClick={handleLargeQuantityIncrease}>
-            +
-          </button>
-        </div>
-      </div>
-    </div>
+    <Jar
+      image={Bucket}
+      size="Large"
+      weight="1kg"
+      price={40.00}
+      quantity={largeQuantity}
+      setQuantity={setLargeQuantity}
+      prevQuantity={prevLargeQuantity}
+      setPrevQuantity={setPrevLargeQuantity}
+    />
   )
 }
 

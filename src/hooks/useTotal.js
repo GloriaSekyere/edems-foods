@@ -5,7 +5,7 @@ export const useTotal = () => {
   const context = useContext(TotalContext)
 
   if (context === undefined) {
-    throw new Error("useTotal must be used inside a TotalProvide")
+    throw new Error("useTotal must be used inside a TotalProvider")
   }
 
   return context
