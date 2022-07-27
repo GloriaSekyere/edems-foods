@@ -48,7 +48,7 @@ const Jar = ({
       <div className='products-item-details'>
         <div className='products-item-details-description'>
           <p>{size} <span>({weight})</span></p>
-          <p><span>GHC</span> {price}</p>
+          <p><span>GH₵</span> {price}</p>
         </div>
 
         <div className='products-item-details-quantity'>
