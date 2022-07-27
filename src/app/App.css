@@ -193,6 +193,125 @@ body {
   font-weight: 500;
 }
 
+.order-summary {
+  width: 85%;
+  margin: auto;
+}
+
+.order-summary-cards {
+  width: 100%;
+}
+
+.order-summary-card {
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background-color: #FBFBFB;
+  -webkit-box-shadow: 0 0 7.5px silver;
+          box-shadow: 0 0 7.5px silver;
+  margin-bottom: 20px;
+}
+
+.order-summary-card-img {
+  width: 75px;
+}
+
+.order-summary-card-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.order-summary-card-description {
+  color: #5A6F1D;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.order-summary-card-description span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.order-summary-card-quantity {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #5A6F1D;
+  border-radius: 5px;
+  background-color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  color: #5A6F1D;
+}
+
+.order-summary-total {
+  background-color: #E7523F;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-summary-total p {
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.order-summary-total p:first-child {
+  font-weight: 500;
+}
+
+.order-summary-total p span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.delivery-mode {
+  width: 100%;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.delivery-mode h2 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #5A6F1D;
+  margin-bottom: 25px;
+}
+
+.delivery-mode a {
+  display: block;
+  background-color: #FBFBFB;
+  border-radius: 5px;
+  color: #5A6F1D;
+  text-decoration: none;
+  padding: 15px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0 0 7.5px silver;
+          box-shadow: 0 0 7.5px silver;
+}
+
 .home-content-card {
   color: #5A6F1D;
   text-transform: uppercase;

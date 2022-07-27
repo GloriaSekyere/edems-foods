@@ -1,0 +1,101 @@
+.order-summary {
+  width: 85%;
+  margin: auto;
+
+  &-cards {
+    width: 100%;
+  }
+
+  &-card {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: $gray;
+    box-shadow: $box-shadow;
+    margin-bottom: 20px;
+  
+    &-img {
+      width: 75px;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  
+    &-description {
+      color: $green;
+      font-size: 18px;
+      font-weight: 500;
+      span {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  
+    &-quantity {
+      display: grid;
+      place-content: center;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $green;
+      border-radius: 5px;
+      background-color: $white;
+      font-size: 24px;
+      font-weight: 500;
+      color: $green;
+    }
+    } 
+
+  &-total {
+    background-color: $red;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    p {
+      color: $white;
+      text-transform: uppercase;
+      &:first-child {
+        font-weight: 500;
+      }
+      span {
+        display: inline-block;
+        margin-left: 5px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.delivery-mode {
+  width: 100%;
+  margin-top: 50px;
+  text-transform: uppercase;
+  h2 {
+    
+    font-weight: 500;
+    font-size: 18px;
+    color: $green;
+    margin-bottom: 25px;
+  }
+  a {
+    display: block;
+    background-color: $gray;
+    border-radius: 5px;
+    color: $green;
+    text-decoration: none;
+    padding: 15px;
+    margin-bottom: 25px;
+    box-shadow: $box-shadow;
+  }
+}
+
+
+
